@@ -88,6 +88,7 @@
         <hr>
 
         <section id="feedback">
+            <h2>Meeting Feedback</h2>
             <fieldset>
                 <legend>Meeting Feedback Form</legend>
                 <form>
@@ -112,4 +113,39 @@
 
                     <input type="radio" id="very-low" name="prod" value="very-low">
                     <label for="very-low">Complete Waste of Time</label><br>
-                    <input
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Email me the minutes</label><br><br>
+
+                    <label for="role">Your Role:</label>
+                    <select id="role" name="role">
+                        <option value="dev">Developer</option>
+                        <option value="design">Designer</option>
+                        <option value="manager">Manager</option>
+                    </select><br><br>
+
+                    <label for="browser-choice">Preferred Browser:</label>
+                    <input list="browsers" id="browser-choice" name="browser-choice">
+                    <datalist id="browsers">
+                        <option value="Chrome">
+                        <option value="Firefox">
+                        <option value="Safari">
+                        <option value="Edge">
+                    </datalist><br><br>
+
+                    <label for="comments">Additional Comments:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Team Alpha. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
